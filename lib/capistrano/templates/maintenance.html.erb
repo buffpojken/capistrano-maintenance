@@ -17,7 +17,8 @@
 <body>
     <h1>Maintenance</h1>
 
-    <p>The system is down for <%= reason ? reason : "maintenance" %><br>
+    <p>The system is down because of: <br />
+        <%= reason ? reason : "Maintenance" %><br>
            as of <%= Time.now.strftime("%H:%M %Z") %>.</p>
 
     <p>It'll be back <%= deadline ? deadline : "shortly" %>.</p>
